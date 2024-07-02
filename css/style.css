@@ -1,0 +1,220 @@
+body {
+    align-items: center;
+    text-align: center;
+    background-image: url('cb.gif'); /* Replace 'path/to/your/gif.gif' with your actual GIF file path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent the GIF from repeating */
+    background-attachment: fixed; /* Fixed background position */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+/*.background {
+    background: url('bg.png') center no-repeat fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+}*/
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.hh1 {
+  margin-top: 30px;
+}
+
+h1 {
+    color: white;
+    background-color: rgb(87, 219, 202);
+    border-radius: 10px;
+    border: 0;
+    margin: auto;
+    width: 200px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    box-shadow:rgba(35, 48, 66, 0.4) 0 2px 4px,rgba(35, 52, 66, 0.3) 0 7px 13px -3px,rgba(58, 87, 111, 0.5) 0 -3px 0 inset;
+    
+}
+
+.box{
+ border: solid 2px black;
+ margin-top: 30px;
+ margin: auto;
+ height: 400px;
+ width: 330px;
+ border-radius: 20px;
+ backdrop-filter: blur;
+ background-color: lightskyblue ;
+ background-image: radial-gradient(100% 100% at 100% 0, red 0,orange 20%, yellow 40%, Green 60%, blue 80%, violet 100%, indigo 120%);
+ border: 0;
+ white-space: nowrap;
+ position: relative;
+ overflow: hidden;
+ box-shadow:rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+}
+
+img {
+    border: rgb(57, 200, 243) 4px solid;
+    margin-top: 20px;
+    border-radius: 10%;
+    outline: none;
+    position: relative;
+    box-shadow:rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+}
+
+.info {
+    border-top: black;
+    margin: auto;
+    width: 300px;
+    margin-top: 20px;
+    border-style: dashed;
+    height: 0px;
+    border-color: white;
+    box-shadow:rgba(35, 48, 66, 0.4) 0 2px 4px,rgba(35, 52, 66, 0.3) 0 7px 13px -3px,rgba(58, 87, 111, 0.5) 0 -3px 0 inset;
+    /*border-style: unset;*/
+}
+
+h2 {
+    font-style: italic ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black ;
+    font-weight: bold;
+    text-decoration: wavy;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p1 {
+    font-style: italic;
+}
+
+p2 {
+    font-style: italic;
+}
+
+.btnpf {
+    align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.btnpf:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btnpf:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btnpf:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+.btnpf2 {
+    align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.btnpf2:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btnpf2:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btnpf2:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#music-player {
+  text-align: center;
+  color: white; /* Text color */
+  font-family: Arial, sans-serif;
+}
+
+
