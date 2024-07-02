@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="./style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <script src="script.js"></script>
+    <title>enzo-acidal-profile</title>
 
 </head>
 <body>
@@ -20,7 +18,7 @@
 
     <div class="box" style="margin-top: 20px;">
     <div class="img">
-        <img src="img.png" style="height: 200px; width: 200px;">
+        <img src="img/img.png" style="height: 200px; width: 200px;">
     </div>
 
     <div class="info">
@@ -38,6 +36,14 @@
     <input type="button" value="About" style="border: none; background-color: transparent; font-family: monospace; font-weight: bold;" onclick="redirectToLink('https://www.facebook.com/K.KingEnzo/about')">
 </div>
 
+<div id="music-player">
+    <h3>Hi! Glad you clicked the link Buddy!</h3>
+    <audio id="audio-player" controls autoplay> <!-- Added muted attribute -->
+        <source src="music/cute.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script src="js/script.js"></script:scr>
     
 </body>
 </html>
