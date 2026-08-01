@@ -2,48 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>enzo-acidal-profile</title>
-
+    <meta name="description" content="AI APK Maker helps plan, scaffold, and export starter Android app projects with optional Gemini-powered suggestions.">
+    <link href="css/style.css" rel="stylesheet">
+    <title>AI APK Maker</title>
 </head>
 <body>
-    <div class="bg"></div>
-    <div class="bg2"></div>
-    <div class="bg3"></div>
+    <div class="app-shell">
+        <header class="hero">
+            <p class="eyebrow">Mobile AI Builder</p>
+            <h1>AI APK Maker</h1>
+            <p class="hero-copy">Design a mobile app idea, generate a smart Android starter project, and export the files you need to continue in Android Studio.</p>
+            <div class="hero-actions">
+                <a class="button primary" href="#builder">Start building</a>
+                <a class="button ghost" href="#setup">Gemini setup</a>
+            </div>
+        </header>
 
-<div class="hh1">
-    <h1>My Profile</h1>
-</div>
+        <main>
+            <section id="builder" class="panel builder-grid" aria-labelledby="builder-title">
+                <div>
+                    <p class="section-tag">Project brief</p>
+                    <h2 id="builder-title">Tell the builder what APK you want</h2>
+                    <p class="muted">This browser tool creates a realistic Android project blueprint. Add a Gemini API key if you want AI-generated recommendations for screens, features, and permissions.</p>
 
-    <div class="box" style="margin-top: 20px;">
-    <div class="img">
-        <img src="img/img.png" style="height: 200px; width: 200px;">
+                    <form id="apk-form" class="apk-form">
+                        <label>
+                            App name
+                            <input id="app-name" name="appName" type="text" value="SmartTask AI" maxlength="40" required>
+                        </label>
+
+                        <label>
+                            App idea
+                            <textarea id="app-idea" name="appIdea" rows="5" required>Build a productivity app that turns voice notes into tasks, reminders, and summaries for students.</textarea>
+                        </label>
+
+                        <div class="two-column">
+                            <label>
+                                App type
+                                <select id="app-type" name="appType">
+                                    <option>Productivity</option>
+                                    <option>Education</option>
+                                    <option>Health & Fitness</option>
+                                    <option>Finance</option>
+                                    <option>Social</option>
+                                    <option>Game</option>
+                                </select>
+                            </label>
+
+                            <label>
+                                UI style
+                                <select id="ui-style" name="uiStyle">
+                                    <option>Modern Material</option>
+                                    <option>Dark Neon</option>
+                                    <option>Minimal Clean</option>
+                                    <option>Playful Cards</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <label>
+                            Gemini API key <span class="optional">optional, stored only in this browser tab</span>
+                            <input id="api-key" name="apiKey" type="password" autocomplete="off" placeholder="AIza...">
+                        </label>
+
+                        <div class="checkbox-list" aria-label="Android features">
+                            <label><input type="checkbox" value="Offline mode" checked> Offline mode</label>
+                            <label><input type="checkbox" value="Push notifications" checked> Push notifications</label>
+                            <label><input type="checkbox" value="Camera access"> Camera access</label>
+                            <label><input type="checkbox" value="Location services"> Location services</label>
+                            <label><input type="checkbox" value="In-app AI chat" checked> In-app AI chat</label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="button primary" type="submit">Generate APK plan</button>
+                            <button class="button secondary" id="download-btn" type="button" disabled>Download starter project</button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="device-preview" aria-label="Mobile app preview">
+                    <div class="phone-frame">
+                        <div class="phone-top"></div>
+                        <div class="phone-screen">
+                            <p class="mini-label">Live preview</p>
+                            <h3 id="preview-name">SmartTask AI</h3>
+                            <p id="preview-type">Productivity • Modern Material</p>
+                            <div id="preview-features" class="feature-chips"></div>
+                            <div class="mock-card">AI assistant ready to build your app flow.</div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="panel output-panel" aria-labelledby="output-title">
+                <div class="output-header">
+                    <div>
+                        <p class="section-tag">Generated result</p>
+                        <h2 id="output-title">APK project plan</h2>
+                    </div>
+                    <span id="status-pill" class="status-pill">Waiting for brief</span>
+                </div>
+                <pre id="output" class="output-box">Fill out the form and click “Generate APK plan”.</pre>
+            </section>
+
+            <section id="setup" class="panel steps" aria-labelledby="setup-title">
+                <p class="section-tag">How it works</p>
+                <h2 id="setup-title">From idea to installable APK</h2>
+                <div class="step-grid">
+                    <article><strong>1. Generate</strong><span>Create screens, features, permissions, and starter Kotlin files.</span></article>
+                    <article><strong>2. Open</strong><span>Download the project summary and copy the scaffold into Android Studio.</span></article>
+                    <article><strong>3. Build</strong><span>Add your real package name, run Gradle, then create your signed APK/AAB.</span></article>
+                </div>
+                <p class="privacy-note">Security note: never publish your Gemini API key in client-side code. For production apps, call Gemini from a backend or protected serverless function.</p>
+            </section>
+        </main>
     </div>
 
-    <div class="info">
-    <h2>Kurt Lawrence V. Ladica</h2>
-    <p1>17 years old</p1><br>
-    <p2>Lives in Calandagan Araceli Palawan</p2>
-    </div>
-</div>
-
-<div class="btnpf" >
-    <input style="border: none; background-color: transparent; font-family: monospace; font-weight: bold;" type="button" value="View Profile" onclick="redirectToLink('https://www.facebook.com/K.KingEnzo')">
-</div>
-
-<div class="btnpf2">
-    <input type="button" value="About" style="border: none; background-color: transparent; font-family: monospace; font-weight: bold;" onclick="redirectToLink('https://www.facebook.com/K.KingEnzo/about')">
-</div>
-
-<div id="music-player">
-    <h3>Hi! Glad you clicked the link Buddy!</h3>
-    <audio id="audio-player" controls autoplay> <!-- Added muted attribute -->
-        <source src="music/cute.mp3" type="audio/mpeg">
-    </audio>
-</div>
-
-<script src="js/script.js"></script:scr>
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
